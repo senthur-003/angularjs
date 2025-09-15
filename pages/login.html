@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="loginApp">
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../js/angular.min.js"></script>
+    <script src="../controller/login.js"></script>
+</head>
+
+<body>
+    <div class="login-container" ng-controller="loginController">
+        <h2>Login</h2>
+        <form ng-submit="showAlert()">
+            <input type="text" placeholder="Username" ng-model="user.username" required>
+            <input type="password" placeholder="Password" ng-model="user.password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+
+</html>
